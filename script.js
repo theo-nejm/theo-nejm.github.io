@@ -113,7 +113,7 @@ prevButton.addEventListener("click", () => {
             break
         case 1:
             projectTitle.innerText = "fastapping"
-            projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro."
+            projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro. (foi feito para computador, portanto, não pode ser executado em celulares)."
             project3.classList.remove("selected-li")
             project2.classList.add("selected-li")
             projectLink.setAttribute('href', 'fastapping')
