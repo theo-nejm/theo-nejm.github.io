@@ -1,0 +1,911 @@
+/* GERAL ========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Dosis', sans-serif;
+}
+
+.general-section {
+    width: 80vw;
+    height: 100vh;
+    float: right;
+    justify-content: justify;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color:rgb(228, 228, 255);
+}
+
+.section-title {
+    margin: 3.2vw auto;
+    position: relative;
+    height: 20vh;
+    width: 80vw;
+}
+
+.section-title .background-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto; 
+    opacity: .075;
+    font-size: 8vw;
+    letter-spacing: .3vw;
+    z-index: 0;
+}
+
+.section-title .subtitle-text {
+    font-size: 3.5vw;
+    margin-top: 3.35%;
+    z-index: 10;
+    opacity: 1;
+}
+
+.section-title .subtitle-text span {
+    border-bottom: .25rem #daa520 solid;
+    opacity: 1;
+}
+
+.selected-li {
+    color: #daa520;
+}
+
+.selected-section a {
+    color: #daa520 !important;
+}
+
+#scroll-to-top-box {
+    position: absolute;
+    height: 5vw;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    margin: .5vw;
+}
+
+#scroll-to-top-button {
+    position: fixed;
+    height: 5vw;
+    display: flex;
+    padding: .3vw;
+    margin-left: 94.8vw;
+    z-index: -1;
+    cursor: pointer;
+    background: rgb(228, 228, 255);
+    border-radius: 50%;
+}
+
+.shownScrollTopButton {
+    z-index: 999 !important;
+}
+
+/* SIDE MENU ========================== */
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    position: fixed;
+
+    height: 100vh;
+    width: 20vw;
+
+    float: left;
+
+    background: linear-gradient(to bottom, rgb(0, 0, 40), rgb(0, 0, 70));
+    font-family: "Poppins", sans-serif;
+}
+
+.profile {
+    margin: 3rem 0 0;
+    color: rgb(228, 228, 255);
+    font-size: 1.15vw;
+    font-weight: 800;
+}
+
+.profile img {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+
+    padding: .35vw;
+    border: .4vw solid rgb(228, 228, 255);
+}
+
+.side-menu-nav {
+    margin-top: 0;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 2vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color:rgb(228, 228, 255);
+}
+
+.nav-list li a:hover {
+    color:#daa520;
+    transition-duration: .3s;
+}
+
+.side-menu-social-medias {
+    background-color: rgb(228, 228, 255);
+    width: 100%;
+}
+
+.side-menu-social-medias img{
+    margin: .3vw 1.5vw;
+    height: 2vw
+}
+
+/* INICIO =============================== */
+.start {
+    width: 80vw;
+    height: 100vh;
+    float: right;
+    background-image: url(/src/background-start.jpg);
+    background-size: 80vw;
+    text-align: center;
+    display: block;
+
+    color: rgb(228, 228, 255);
+}
+
+.start-content {
+    width: 80vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 50, .5);
+
+    display: flex;
+    flex-direction: column;
+
+    vertical-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-and-button {
+    margin-bottom: 3.5vw;
+} 
+
+.greetings {
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 10vw;
+    font-weight: 700;
+}
+
+.short-description {
+    font-size: 4vw;
+    text-align: center; 
+    margin-top: .25vw;
+    font-weight: 500;
+}
+
+.short-description span {
+    opacity: 0;
+    animation: blinking .4s infinite alternate;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.contact-me-button {
+    width: 16vw;
+    height: 4.5vw;
+    margin-top: 2.5vw;
+    background-color: transparent;
+    border: .2vw solid rgb(228, 228, 255);
+    border-radius: 3rem;
+    font-size: 1.6vw;
+    font-weight: 500;
+    color: rgb(228, 228, 255);
+}
+
+.contact-me-button:hover {
+    color:rgb(0, 0, 70);
+    background-color: rgb(228, 228, 255);
+    transition-duration: .5s;
+}
+
+.arrow-down {
+    margin-bottom: 3.5vw;
+    transform:  rotate(90deg);
+    animation: arrow-jump 1s ease-in infinite alternate;
+    height: 2vw;
+}
+
+@keyframes arrow-jump {
+    0% {
+        transform: translateY(-.5rem) rotate(90deg); 
+    }
+
+    100% {
+        transform: translateY(2.5rem) rotate(90deg);
+
+    }
+}
+
+/* SOBRE MIM ============================= */
+
+#about-me {
+    background: rgba(0, 0, 40, .9);
+    height: 100vh;
+}
+
+.about-me-content {
+    display: inline-flex;
+    margin-left: 1.2vw;
+    justify-content: space-between;
+    position: relative;
+    height: 100vh;
+    margin-top: 2vw;
+}
+
+.left-informations {
+    text-align: left;
+    width: 52.5vw;
+    text-align: justify;
+}
+
+.who-am-i {
+    font-size: 2.5vw;
+    line-height: 3.75vw;
+    justify-content: justify;
+    margin-left: 2.5vw;
+    padding-bottom: 1vw;
+}
+
+.who-am-i span {
+    font-size: 2.5vw;
+    color: #daa520;
+    text-decoration: underline;
+}
+
+.about-me-description {
+    font-size: 1.205vw;
+    margin-left: 2.5vw;
+    line-height: 2vw;
+}
+
+.right-informations {
+    width: 20vw;
+    font-size: 1.3vw;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1vw;
+}
+
+.right-informations p {
+    margin-bottom: 1.4vw;
+    padding-bottom: 1.4vw;
+    border-bottom: .05rem solid rgba(218, 165, 32, .3);
+    align-items: center;
+    vertical-align: center;
+}
+
+#last-p {
+    border-bottom: none;
+}
+
+.technologies-icons {
+    position: absolute;
+    bottom: 2vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.technologies-icons img {
+    height: 6.5vw;
+    padding: 0;
+    transform: translateY(0rem);
+    transition-duration: .75s;
+}
+
+
+.technologies-icons img:hover {
+    transform: translatey(-1vw);
+}
+
+/* O QUE EU FAÇO / PORTFOLIO ============================= */
+
+#what-do-i-do {
+    background-color:rgba(0, 0, 40, .85);
+}
+
+.carousel {
+    width: 60vw;
+    height: 50vh;
+    align-self: center;
+    position: relative;
+    margin-top: 5vh;
+}
+
+.projects-list-container {
+    position: absolute;
+    height: 50vh;
+    width: 10vw;
+    float: left;
+    display: flex;
+    padding: 5vh 0;
+    text-align: right;
+    padding-right: 3vw;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.project-item {
+    list-style: none;
+    font-size: 1.5vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project-item:hover {
+    color: #daa520;
+    transition-duration: .5s;
+}
+
+.slider {
+    width: 50vw;
+    height: 50vh;
+    float: right;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+}
+
+.carousel-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .75s;
+    z-index: 1;
+}
+
+.selected {
+    opacity: 1;
+}
+
+.carousel-buttons {
+    z-index: 3;
+    height: 5vh;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin: .5vw;
+}
+
+.carousel-buttons button {
+    background: none;
+    border: none;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.carousel-buttons button img {
+    height: 5vh;
+}
+
+#prevButton {
+    transform: rotate(180deg);
+}
+
+.about-project {
+    background-color: rgb(0, 0, 70);
+    height: 50vh;
+    width: 50vw;
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+}
+
+.about-project:hover {
+    opacity: .7;
+    transition-duration: .75s;
+}
+
+#about-project-content {
+    position: absolute;
+    margin: 1vw;
+    font-size: 1.4vw;
+    text-align: justify;
+    bottom: 0;
+}
+
+.top-slide-container {
+    width: 100%;
+    height: 6vh;
+    position: absolute;
+    top: -6vh;
+
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+#project-title {
+    font-size: 2vw;
+    position: relative;
+    left: 0;
+    text-align: left;
+    padding: .5vw;
+}
+
+#open-project-button {
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(228, 228, 255);
+    font-size: 1.5vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 1vw;
+
+    animation: moving-link 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes moving-link {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(.5vh)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+/* ENTRE EM CONTATO ============================= */
+
+#contact-me {
+    background-color:rgba(0, 0, 40, .9);
+}
+
+.contact-me-container {
+    height: 100%;
+    width: 60vw;
+    display: grid;
+    
+    margin-left: 10vw;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-social-media {
+    background: none;
+    height: 65%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    margin-top: 0vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    
+    border-bottom: .2vw solid rgb(228, 228, 255);
+    color: rgb(228, 228, 255);
+
+    margin: 0 auto;
+
+    cursor: pointer;
+
+    transition-duration: .75s;
+}
+
+.contact-social-media:hover {
+    padding-bottom: 1.2vw;
+}
+
+.contact-social-media a {
+    text-decoration: none;
+    color:rgb(228, 228, 255);
+}
+
+.contact-social-media img {
+    height: 6vw;
+    align-self: center;
+}
+
+/* RESPONSIVO ===================================== */
+
+@media screen and (min-width: 1800px) {
+    .about-me-content {
+        margin-top: 8vw;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .about-me-content {
+        margin-top: 0;
+    }
+
+    .section-title {
+        margin: 2vw auto 2vw;
+        padding: 0;
+    }
+
+    .section-title .background-text {
+        font-size: 7vw;
+    }
+
+    .section-title .subtitle-text {
+        font-size: 3vw;
+        margin-top: 3.35%;
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .who-am-i {
+        font-size: 2vw;
+        padding-bottom: 0vw;
+    }
+
+    .who-am-i span {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    .side-menu {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        position: static;
+
+        height: 100vh;
+        width: 100vw;
+
+        float: left;
+
+        background: linear-gradient(to bottom, rgb(0, 0, 40), rgb(0, 0, 70));
+        font-family: "Poppins", sans-serif;
+    }
+
+    .profile {
+        font-size: 2.8vh;
+    }
+
+    .profile img {
+        height: 18vh;
+        width: 18vh;
+    }
+
+    .nav-list li {
+        margin: 2.8vh;
+        font-size: 3vh;
+        font-weight: 400;
+    }
+
+    .side-menu-social-medias img{
+        margin: .2vh 4vh;
+        height: 5vh;
+    }
+
+    .general-section {
+        width: 100vw;
+        height: 100vh;
+        justify-content: justify;
+        text-align: center;
+        align-items: center;
+        display: block;
+        color:rgb(228, 228, 255);
+        float: center;
+
+        overflow: hidden;
+    }
+
+    .section-title {
+        margin: calc(100 / 12 / 100 * 100vw);
+        position: relative;
+        height: calc(100 / 6 / 100 * 100vw);
+        width: 100vw;
+    }
+
+    .section-title .background-text {
+        position: absolute;
+        opacity: .075;
+        font-size: 9vh;
+        letter-spacing: .1rem;
+        z-index: 0;
+        margin: 0, auto;
+    }
+
+    .section-title .subtitle-text {
+        font-size: 4.5vh;
+        z-index: 10;
+        opacity: 1;
+    }
+
+    .arrow-down {
+        opacity : 0;
+        height: 1px;
+    }
+
+    #scroll-to-top-box {
+        height: 7vh;
+        margin-bottom: 1vw;
+    }
+
+    #scroll-to-top-button {
+        height: 7vh;
+        margin-left: 87vw;
+    }
+
+    .start {
+        position: relative;
+        float: left;
+        width: 100vw;
+        background-size: 350vw;
+    }
+
+    .start-content {
+        position: relative;
+        float: left;
+        width: 100vw;
+    }
+
+    .greetings {
+        font-size: 4vh;
+        padding-top: 2vh;
+    }
+
+    .short-description {
+        font-size: 5.5vh;
+        margin-top: 2vh;
+    }
+
+    .contact-me-button {
+        width: 18vh;
+        height: 5.5vh;
+        margin-top: 5vh;
+        background-color: transparent;
+        border: .35vh solid rgb(228, 228, 255);
+        border-radius: 3rem;
+        font-size: 1.75vh;
+        font-weight: 700;
+    }    
+    
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.2vw;
+        position: relative;
+        height: 100vh;
+        margin-top: 2vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .left-informations {
+        text-align: left;
+        width: 65vw;
+        text-align: justify;
+    }
+
+    .who-am-i {
+        font-size: 4vh;
+        line-height: 6vh;
+        margin-left: 0;
+        padding-bottom: 0;
+        margin-top: -10vh;
+        margin-bottom: 2vh;
+    }
+
+    .who-am-i span {
+        font-size: 4vh;
+        color: #daa520;
+        text-decoration: underline;
+    }
+
+    .about-me-description {
+        font-size: 1.5vh;
+        margin-left: 0;
+        line-height: 2.5vh;
+    }
+
+    .right-informations {
+        width: 65vw;
+        font-size: 2vh;
+        display: inline-block;
+        text-align: left;
+        margin-top: -18vh;
+    }
+
+    .technologies-icons {
+        position: absolute;
+        bottom: 22.5vh;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5vh;
+    }
+
+    .section-title .background-text {
+        left: -16vw;
+    }
+    
+    .section-title .subtitle-text {
+        padding-top: 4.44vw;
+        padding-right: 16vw;
+    }
+
+    #what-do-i-do {
+        height: 70vh;
+    }
+
+    .carousel {
+        width: 90vw;
+        height: 30vw;
+        margin: auto 0;
+        margin-top: 10vh;
+        opacity: 1;
+    }
+
+    .projects-list-container {
+        transform: translateX(1000px);
+    }
+
+    .slider {
+        width: 90vw;
+        height: 30vh;
+        align-self: center;
+        left: 5vw;
+        position: absolute;
+    }
+
+    .carousel-image {
+        height: 30vh;
+        width: 90vw;
+       
+    }
+
+    .top-slide-container {
+        width: 100%;
+        height: 6vh;
+        position: absolute;
+        top: -6vh;
+    
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #project-title {
+        font-size: 3vh;
+        position: relative;
+    }
+
+    #open-project-button {
+        font-size: 2.5vh;
+    }
+
+    .about-project {
+        opacity: 1;
+        background: none;
+        height: 40vw;
+        width: 90vw;
+    }
+
+    .carousel-buttons {
+        height: 4vh;
+        margin-right: 0;
+    }
+
+    .carousel-buttons button {
+        height: 4vh;
+    }
+
+    .carousel-buttons button img {
+        height: 4vh;
+    }
+    
+    .about-project {
+        position: absolute;
+        height: 20vh;
+        width: 90vw;
+        top: 10vh;
+    }
+
+    .about-project:hover {
+        opacity: 1;
+    }
+
+    #about-project-content { 
+        position: relative;
+        opacity: 1;
+        bottom: -21vh;
+        font-size: 2vh;
+    }
+
+    #contact-me {
+        height: 60vh;
+    }
+
+    .contact-me-container {
+        height: 40vh;
+        width: 90vw;
+        margin-left: 5vw;
+
+        grid-gap: 0;
+    }
+
+    .contact-social-media {
+        height: 10vh;
+        width: 30vw;
+
+        font-size: 1.5vh;
+
+        border-bottom: .2vh solid rgb(228, 228, 255);
+    }
+
+    .contact-social-media img {
+        height: 6vh;
+    }
+
+}
