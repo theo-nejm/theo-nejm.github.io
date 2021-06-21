@@ -8,6 +8,7 @@ const projectContent = document.getElementById("about-project-content");
 const allProjectItems = document.querySelectorAll(".project-item")
 const allSideItems = document.querySelectorAll(".list-item")
 const scrollToTopButton = document.getElementById("scroll-to-top-button")
+let projectLink = document.querySelector('#project-link')
 
 let height = document.querySelector(".side-menu").offsetHeight
 height = Number(height)
@@ -29,14 +30,16 @@ function forceChangeImage(currentImageIndex) {
                 projectItem.classList.remove("selected-li")
             })
             project1.classList.add("selected-li")
+            projectLink.setAttribute('href', 'dev-finances')
             break
         case 1:
-            projectTitle.innerText = "Mini Yoda"
-            projectContent.innerText = "Mini Yoda: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
+            projectTitle.innerText = 'fastapping'
+            projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro."
             allProjectItems.forEach(projectItem => {
                 projectItem.classList.remove("selected-li")
             })
             project2.classList.add("selected-li")
+            projectLink.setAttribute('href', 'fastapping')
             break
         case 2:
             projectTitle.innerText = "Lamborghini"
@@ -68,12 +71,14 @@ nextButton.addEventListener("click", () => {
             projectContent.innerText = "dev-finance$: este foi um projeto construído durante a maratona do Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa."
             project3.classList.remove("selected-li")
             project1.classList.add("selected-li")
+            projectLink.setAttribute('href', 'dev-finances')
             break
         case 1:
-            projectTitle.innerText = "Mini Yoda"
-            projectContent.innerText = "Mini Yoda: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
+            projectTitle.innerText = "fastapping"
+            projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro."
             project1.classList.remove("selected-li")
             project2.classList.add("selected-li")
+            projectLink.setAttribute('href', 'fastapping')
             break
         case 2:
             projectTitle.innerText = "Lamborghini"
@@ -101,15 +106,17 @@ prevButton.addEventListener("click", () => {
     switch (currentImageIndex) {
         case 0:
             projectTitle.innerText = "dev.finance$";
-            projectContent.innerText = "dev-finance$: este foi um projeto construído durante a maratona do Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa."
+            projectContent.innerText = "dev-finance$: este foi um projeto construído durante a maratona do Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa. O programa foi feito apenas com HTML, CSS e Javascript puro."
             project2.classList.remove("selected-li")
             project1.classList.add("selected-li")
+            projectLink.setAttribute('href', 'dev-finances')
             break
         case 1:
-            projectTitle.innerText = "Mini Yoda"
-            projectContent.innerText = "Mini Yoda: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
+            projectTitle.innerText = "fastapping"
+            projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro."
             project3.classList.remove("selected-li")
             project2.classList.add("selected-li")
+            projectLink.setAttribute('href', 'fastapping')
             break
         case 2:
             projectTitle.innerText = "Lamborghini"
@@ -162,3 +169,8 @@ function scrollToTop() {
     window.scrollTo(0, 0)
 }
 window.addEventListener("load", changeSideSelectedSection)
+
+// Change links list
+function changeLink() {
+
+}
