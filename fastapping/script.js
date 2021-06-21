@@ -303,9 +303,9 @@ function addExtraData() {
     const resultsCount = resultsList.length > 0 ? resultsList.length : 0;
 
     resultsList.forEach(item => {
-        resultsList == item == 0 ? (highestPPM = item, lowestPPM = item) : ''
+        item == resultsList[0] ? (highestPPM = item, lowestPPM = item) : ''
         
-        highestPPM = item >= highestPPM ? item : highestPPM
+        highestPPM = item >= highestPPM ? item : highestPPM 
         lowestPPM = item <= lowestPPM ? item : lowestPPM
         ppmSum += item
     })
