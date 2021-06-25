@@ -80,12 +80,6 @@ nextButton.addEventListener("click", () => {
             project2.classList.add("selected-li")
             projectLink.setAttribute('href', 'fastapping')
             break
-        case 2:
-            projectTitle.innerText = "Lamborghini"
-            projectContent.innerText = "Lamborghini: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
-            project2.classList.remove("selected-li")
-            project3.classList.add("selected-li")
-            break
     }
 })
 
@@ -117,12 +111,6 @@ prevButton.addEventListener("click", () => {
             project3.classList.remove("selected-li")
             project2.classList.add("selected-li")
             projectLink.setAttribute('href', 'fastapping')
-            break
-        case 2:
-            projectTitle.innerText = "Lamborghini"
-            projectContent.innerText = "Lamborghini: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
-            project1.classList.remove("selected-li")
-            project3.classList.add("selected-li")
             break
     }
 })
