@@ -42,12 +42,11 @@ function forceChangeImage(currentImageIndex) {
             projectLink.setAttribute('href', 'fastapping')
             break
         case 2:
-            projectTitle.innerText = "Lamborghini"
-            projectContent.innerText = "Lamborghini: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga saepe illum sit dolorem suscipit hic vero tempora officiis. Nobis quisquam reiciendis corrupti soluta veritatis numquam, repellat quia velit perferendis at?"
-            allProjectItems.forEach(projectItem => {
-                projectItem.classList.remove("selected-li")
-            })
+            projectTitle.innerText = "rocket.q"
+            projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
+            project2.classList.remove("selected-li")
             project3.classList.add("selected-li")
+            projectLink.setAttribute('href', 'https://github.com/Theo-Nejm/nlw-rocketq')
             break
     }
 }
@@ -80,6 +79,13 @@ nextButton.addEventListener("click", () => {
             project2.classList.add("selected-li")
             projectLink.setAttribute('href', 'fastapping')
             break
+        case 2:
+            projectTitle.innerText = "rocket.q"
+            projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
+            project2.classList.remove("selected-li")
+            project3.classList.add("selected-li")
+            projectLink.setAttribute('href', 'https://github.com/Theo-Nejm/nlw-rocketq')
+            break
     }
 })
 
@@ -110,6 +116,13 @@ prevButton.addEventListener("click", () => {
             projectContent.innerText = "fastapping: este foi um projeto que eu criei do zero. Ele é um 'game' que testa quantas palavras o usuário consegue digitar por minuto e a precisão ao digitar e, conforme o usuário vai treinando, um gráfico vai sendo desenvolvido com a evolução dele. O programa foi feito com apenas HTML, CSS e Javascript puro. (foi feito para computador, portanto, não pode ser executado em celulares)."
             project3.classList.remove("selected-li")
             project2.classList.add("selected-li")
+            projectLink.setAttribute('href', 'fastapping')
+            break 
+        case 2:
+            projectTitle.innerText = "rocket.q"
+            projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
+            project2.classList.remove("selected-li")
+            project3.classList.add("selected-li")
             projectLink.setAttribute('href', 'fastapping')
             break
     }
