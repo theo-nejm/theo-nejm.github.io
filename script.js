@@ -46,7 +46,7 @@ function forceChangeImage(currentImageIndex) {
             projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
             project2.classList.remove("selected-li")
             project3.classList.add("selected-li")
-            projectLink.setAttribute('href', 'https://github.com/Theo-Nejm/nlw-rocketq')
+            projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
             break
     }
 }
@@ -84,7 +84,7 @@ nextButton.addEventListener("click", () => {
             projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
             project2.classList.remove("selected-li")
             project3.classList.add("selected-li")
-            projectLink.setAttribute('href', 'https://github.com/Theo-Nejm/nlw-rocketq')
+            projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
             break
     }
 })
@@ -123,7 +123,7 @@ prevButton.addEventListener("click", () => {
             projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
             project2.classList.remove("selected-li")
             project3.classList.add("selected-li")
-            projectLink.setAttribute('href', 'fastapping')
+            projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
             break
     }
 })
@@ -169,9 +169,5 @@ window.addEventListener("scroll", () => {
 function scrollToTop() {
     window.scrollTo(0, 0)
 }
+
 window.addEventListener("load", changeSideSelectedSection)
-
-// Change links list
-function changeLink() {
-
-}
