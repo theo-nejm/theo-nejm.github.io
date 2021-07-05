@@ -44,9 +44,20 @@ function forceChangeImage(currentImageIndex) {
         case 2:
             projectTitle.innerText = "rocket.q"
             projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
-            project2.classList.remove("selected-li")
+            allProjectItems.forEach(projectItem => {
+                projectItem.classList.remove("selected-li")
+            })
             project3.classList.add("selected-li")
             projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
+            break
+        case 3: 
+            projectTitle.innerText = "todo-list"
+            projectContent.innerText = "todo-list: este foi um projeto desenvolvido por mim para auxiliar os alunos do IFCE a iniciarem com o desenvolvimento para a web. Ele é um CRUD de uma lista de tarefas que possui o armazenamento local e permite criar quantas tarefas forem necessárias, marcá-las como concluídas e excluí-las. Ele usa somente HTML, CSS e Javascript puro."
+            allProjectItems.forEach(projectItem => {
+                projectItem.classList.remove("selected-li")
+            })
+            project4.classList.add("selected-li")
+            projectLink.setAttribute('href', 'todo-list')
             break
     }
 }
@@ -68,7 +79,7 @@ nextButton.addEventListener("click", () => {
         case 0:
             projectTitle.innerText = "dev.finance$";
             projectContent.innerText = "dev-finance$: este foi um projeto construído durante a maratona do Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa."
-            project3.classList.remove("selected-li")
+            project4.classList.remove("selected-li")
             project1.classList.add("selected-li")
             projectLink.setAttribute('href', 'dev-finances')
             break
@@ -85,6 +96,13 @@ nextButton.addEventListener("click", () => {
             project2.classList.remove("selected-li")
             project3.classList.add("selected-li")
             projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
+            break
+        case 3: 
+            projectTitle.innerText = "todo-list"
+            projectContent.innerText = "todo-list: este foi um projeto desenvolvido por mim para auxiliar os alunos do IFCE a iniciarem com o desenvolvimento para a web. Ele é um CRUD de uma lista de tarefas que possui o armazenamento local e permite criar quantas tarefas forem necessárias, marcá-las como concluídas e excluí-las. Ele usa somente HTML, CSS e Javascript puro."
+            project3.classList.remove("selected-li")
+            project4.classList.add("selected-li")
+            projectLink.setAttribute('href', 'todo-list')
             break
     }
 })
@@ -121,9 +139,16 @@ prevButton.addEventListener("click", () => {
         case 2:
             projectTitle.innerText = "rocket.q"
             projectContent.innerText = "rocket.q: este foi um projeto desenvolvido durante a NLW - together, da Rocketseat. Ele trata de ciar ou entrar em salas já existentes para fazer perguntas anônimas, que podem ser moderadas pelo criador da sala ou qualquer um que tenha a senha dela. O programa foi feito com EJS, Javascript, Node com express e usando o SQLite como banco de dados."
-            project2.classList.remove("selected-li")
+            project4.classList.remove("selected-li")
             project3.classList.add("selected-li")
             projectLink.setAttribute('href', 'https://rocketq-app.herokuapp.com/')
+            break
+        case 3: 
+            projectTitle.innerText = "todo-list"
+            projectContent.innerText = "todo-list: este foi um projeto desenvolvido por mim para auxiliar os alunos do IFCE a iniciarem com o desenvolvimento para a web. Ele é um CRUD de uma lista de tarefas que possui o armazenamento local e permite criar quantas tarefas forem necessárias, marcá-las como concluídas e excluí-las. Ele usa somente HTML, CSS e Javascript puro."
+            project1.classList.remove("selected-li")
+            project4.classList.add("selected-li")
+            projectLink.setAttribute('href', 'todo-list')
             break
     }
 })

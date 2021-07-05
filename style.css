@@ -163,7 +163,7 @@ html {
     width: 80vw;
     height: 100vh;
     float: right;
-    background-image: url(/src/background-start.jpg);
+    background-image: url(/assets/background-start.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
