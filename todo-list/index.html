@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto férias</title>
+
+    <!-- FONTS ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Projeto <span>férias</span></h1>
+
+        <div class="header-buttons">
+            <button class="add-task" onclick="openAddTaskModal()">
+                <span>+</span> Adicionar tarefa
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-subtitle">
+            <h2>
+                Lista de tarefas
+            </h2>
+        </div>
+        <div class="tasks-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome da tarefa</th>
+                        <th>Status</th>
+                        <th>Concluída</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Todos os direitos reservados ~ Theo Nejm | 2021</p>
+    </footer>
+
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Título da modal</h3>
+                <p class="modal-subtitle">Descrição da modal</p>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-buttons">
+                <button class="button close-modal" onclick="closeAddTaskModal()">
+                    Cancelar
+                </button>
+
+                <button class="button save" onclick="saveNewTask()">
+                    Salvar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
