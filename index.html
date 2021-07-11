@@ -2,186 +2,189 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portifolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portifolio</title>
 
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section class="side-menu">
-        <div class="profile">
-            <img class="profile-avatar" src="/assets/minha-foto.png" id="my-photo">
-            <h2 class="profile-title">Theo Nejm</h2>
-        </div>
-        <nav class="side-menu-nav">
-            <ul class="nav-list">
-                <li class="list-item selected-section" id="ref-section0"><a href="#start">Inicio</a></li>
-                <li class="list-item" id="ref-section1"><a href="#about-me">Sobre mim</a></li>
-                <li class="list-item" id="ref-section2"><a href="#what-do-i-do">Portfólio</a></li>
-                <li class="list-item" id="ref-section3"><a href="#contact-me">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="side-menu-social-medias">
-            <a href="https://www.linkedin.com/in/theo-nejm" target="_blank"><img src="/assets/linkedin-icon.svg"></a>
-            <a href="https://github.com/Theo-Nejm" target="_blank"><img src="/assets/github-icon.svg"></a>
-            <a href="https://wa.me/5585997404228" target="_blank"><img src="/assets/whatsapp-icon.svg"></a>
-        </div>
-    </section>
-    <div id="scroll-to-top-box">
-        <img src="./assets/arrow-up-icon.svg" alt="Imagem de seta para cima" id="scroll-to-top-button" class=""
-            onclick="scrollToTop()">
+  <section class="side-menu">
+    <div class="profile">
+      <img class="profile-avatar" src="/assets/minha-foto.png" id="my-photo">
+      <h2 class="profile-title">Theo Nejm</h2>
     </div>
-    <section class="start" id="start">
-        <div class="start-content">
-            <div></div>
-            <div class="content-and-button">
-                <h3 class="greetings">Bem-vindo!</h3>
-                <p class="short-description">Eu sou o Theo, um desenvolvedor web!<span>|</span></p>
-                <a href="#about-me"><button class="contact-me-button">Saiba mais</button></a>
-            </div>
+    <nav class="side-menu-nav">
+      <ul class="nav-list">
+        <li class="list-item selected-section" id="ref-section0"><a href="#start">Inicio</a></li>
+        <li class="list-item" id="ref-section1"><a href="#about-me">Sobre mim</a></li>
+        <li class="list-item" id="ref-section2"><a href="#what-do-i-do">Portfólio</a></li>
+        <li class="list-item" id="ref-section3"><a href="#contact-me">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="side-menu-social-medias">
+      <a href="https://www.linkedin.com/in/theo-nejm" target="_blank"><img src="/assets/linkedin-icon.svg"></a>
+      <a href="https://github.com/Theo-Nejm" target="_blank"><img src="/assets/github-icon.svg"></a>
+      <a href="https://wa.me/5585997404228" target="_blank"><img src="/assets/whatsapp-icon.svg"></a>
+    </div>
+  </section>
+  <div id="scroll-to-top-box">
+    <img src="./assets/arrow-up-icon.svg" alt="Imagem de seta para cima" id="scroll-to-top-button" class=""
+      onclick="scrollToTop()">
+  </div>
+  <section class="start" id="start">
+    <div class="start-content">
+      <div></div>
+      <div class="content-and-button">
+        <h3 class="greetings">Bem-vindo!</h3>
+        <p class="short-description">Eu sou o Theo, um desenvolvedor web!<span>|</span></p>
+        <a href="#about-me"><button class="contact-me-button">Saiba mais</button></a>
+      </div>
 
-            <div class="arrow-jumping">
-                <a href="#about-me" id="arrow-link">
-                    <img src="./assets/arrow-down.svg" class="arrow-down">
-                </a>
-            </div>
+      <div class="arrow-jumping">
+        <a href="#about-me" id="arrow-link">
+          <img src="./assets/arrow-down.svg" class="arrow-down">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="about-me" class="general-section">
+    <div class="section-title">
+      <h2 class="background-text">SOBRE MIM</h2>
+
+      <h3 class="subtitle-text">Qu<span>em sou </span>eu?</h3>
+
+    </div>
+    <div class="about-me-content">
+      <div class="left-informations">
+        <h3 class="who-am-i">
+          Eu sou <span class="red-spotlight">Theo Nejm,</span> um web developer!
+        </h3>
+        <p class="about-me-description">Comecei a me interessar por programação em 2019, quando tive meu
+          primeiro contato com a lógica de programação, navegando pela internet. Daí pra frente, fui tomando
+          gosto pelos desafios e comecei a aprender sobre o desenvolvimento para web, iniciando pelo HTML, CSS
+          e, posteriormente, JavaScript. Hoje em dia, estou cursando bacharelado em Ciência da Computação pelo
+          Instituto Federal de Educação, Ciência e Tecnologia do Ceará e aliando com meu constante aprendizado
+          em desenvolvimento para web, sempre buscando ampliar meu acervo de técnicas e de tecnologias. </p>
+      </div>
+      <div class="right-informations">
+        <p><strong>> Nome: </strong> <span>Theo Nejm Oinegue Fulfaro</span><br></p>
+        <p><strong>> Email: </strong> <span>theoonejm@gmail.com</span><br></p>
+        <p><strong>> Idade: </strong> <span>18 anos</span><br></p>
+        <p id="last-p"><strong>> Cidade: </strong> <span>Fortaleza-CE</span></p>
+      </div>
+
+      <div class="container-medias">
+        <div class="technologies-icons">
+          <div id="html-icon"><img src="assets/html-icon.svg">
+            <p>HTML5</p>
+          </div>
+          <div id="js-icon"><img src="assets/javascript-icon.svg">
+            <p>JavaScript</p>
+          </div>
+          <div id="css-icon"><img src="assets/css-icon.svg">
+            <p>CSS3</p>
+          </div>
+          <div id="git-icon"><img src="assets/git-icon.svg.svg">
+            <p>Git/Github</p>
+          </div>
         </div>
-    </section>
-    <section id="about-me" class="general-section">
-        <div class="section-title">
-            <h2 class="background-text">SOBRE MIM</h2>
+      </div>
+    </div>
+  </section>
 
-            <h3 class="subtitle-text">Qu<span>em sou </span>eu?</h3>
+  <section id="what-do-i-do" class="general-section">
+    <div class="section-title">
+      <h2 class="background-text">PORTFÓLIO</h2>
+      <h3 class="subtitle-text">Me<span>us proje</span>tos</h3>
+    </div>
 
-        </div>
-        <div class="about-me-content">
-            <div class="left-informations">
-                <h3 class="who-am-i">
-                    Eu sou <span class="red-spotlight">Theo Nejm,</span> um web developer!
-                </h3>
-                <p class="about-me-description">Comecei a me interessar por programação em 2019, quando tive meu
-                    primeiro contato com a lógica de programação, navegando pela internet. Daí pra frente, fui tomando
-                    gosto pelos desafios e comecei a aprender sobre o desenvolvimento para web, iniciando pelo HTML, CSS
-                    e, posteriormente, JavaScript. Hoje em dia, estou cursando bacharelado em Ciência da Computação pelo
-                    Instituto Federal de Educação, Ciência e Tecnologia do Ceará e aliando com meu constante aprendizado
-                    em desenvolvimento para web, sempre buscando ampliar meu acervo de técnicas e de tecnologias. </p>
-            </div>
-            <div class="right-informations">
-                <p><strong>> Nome: </strong> <span>Theo Nejm Oinegue Fulfaro</span><br></p>
-                <p><strong>> Email: </strong> <span>theoonejm@gmail.com</span><br></p>
-                <p><strong>> Idade: </strong> <span>18 anos</span><br></p>
-                <p id="last-p"><strong>> Cidade: </strong> <span>Fortaleza-CE</span></p>
-            </div>
-
-            <div class="container-medias">
-                <div class="technologies-icons">
-                    <div id="html-icon"><img src="assets/html-icon.svg">
-                        <p>HTML5</p>
-                    </div>
-                    <div id="js-icon"><img src="assets/javascript-icon.svg">
-                        <p>JavaScript</p>
-                    </div>
-                    <div id="css-icon"><img src="assets/css-icon.svg">
-                        <p>CSS3</p>
-                    </div>
-                    <div id="git-icon"><img src="assets/git-icon.svg.svg">
-                        <p>Git/Github</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="what-do-i-do" class="general-section">
-        <div class="section-title">
-            <h2 class="background-text">PORTFÓLIO</h2>
-            <h3 class="subtitle-text">Me<span>us proje</span>tos</h3>
+    <div class="carousel">
+      <div class="projects-list-container">
+        <ul class="projects-list">
+          <li class="project-item" id="project1">dev.finance$</li>
+          <li class="project-item" id="project2">fastapping</li>
+          <li class="project-item" id="project3">rocket.q</li>
+          <li class="project-item" id="project4">todo-list</li>
+          <li class="project-item" id="project5">pixelize.me</li>
+        </ul>
+      </div>
+      <div class="slider">
+        <img src="./assets/dev-finances.PNG" alt="dev.finance$" class="carousel-image selected"
+          figcaption="Essa é a imagem do projeto 'dev.finance$'">
+        <img src="./assets/fastapping.PNG" alt="fastapping" class="carousel-image"
+          figcaption="Essa é a imagem do projeto 'fastapping'">
+        <img src="./assets/rocketQ-home.PNG" alt="rocket.q" class="carousel-image"
+          figcaption="Essa é a imagem do projeto 'rocket.q'">
+        <img src="./assets/todo-list.png" alt="todo-list" class="carousel-image"
+          figcaption="Essa é a imagem do projeto 'todo-list'">
+        <img src="./assets/pixelize-me.png" alt="pixelize.me" class="carousel-image"
+          figcaption="Essa é a imagem do projeto 'pixelize.me'">
+        <div class="carousel-buttons">
+          <button id="prevButton">
+            <img src="assets/prev-and-next-button.svg">
+          </button>
+          <button id="nextButton">
+            <img src="assets/prev-and-next-button.svg">
+          </button>
         </div>
 
-        <div class="carousel">
-            <div class="projects-list-container">
-                <ul class="projects-list">
-                    <li class="project-item" id="project1" onclick="forceChangeImage(0)">dev.finance$</li>
-                    <li class="project-item" id="project2" onclick="forceChangeImage(1)">fastapping</li>
-                    <li class="project-item" id="project3" onclick="forceChangeImage(2)">rocket.q</li>
-                    <li class="project-item" id="project4" onclick="forceChangeImage(3)">todo-list</li>
-                </ul>
-            </div>
-            <div class="slider">
-                <img src="./assets/dev-finances.PNG" alt="dev.finance$" class="carousel-image selected"
-                    figcaption="Essa é a imagem do projeto 'dev.finance$'">
-                <img src="./assets/fastapping.PNG" alt="fastapping" class="carousel-image"
-                    figcaption="Essa é a imagem do projeto 'fastapping'">
-                <img src="./assets/rocketQ-home.PNG" alt="rocket.q" class="carousel-image"
-                    figcaption="Essa é a imagem do projeto 'rocket.q'">
-                <img src="./assets/todo-list.png" alt="todo-list" class="carousel-image"
-                    figcaption="Essa é a imagem do projeto 'todo-list'">
-                <div class="carousel-buttons">
-                    <button id="prevButton">
-                        <img src="assets/prev-and-next-button.svg">
-                    </button>
-                    <button id="nextButton">
-                        <img src="assets/prev-and-next-button.svg">
-                    </button>
-                </div>
-
-                <div class="top-slide-container">
-                    <h3 id="project-title">dev.finance$</h3>
-                    <a href="dev-finances" target="_blank" id="project-link">
-                        <button id="open-project-button">Abrir projeto</button>
-                    </a>
-                </div>
-                <div class="about-project">
-                    <p id="about-project-content">dev-finance$: este foi um projeto construído durante a maratona do
-                        Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de
-                        entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa.</p>
-                </div>
-            </div>
+        <div class="top-slide-container">
+          <h3 id="project-title">dev.finance$</h3>
+          <a href="dev-finances" target="_blank" id="project-link">
+            <button id="open-project-button">Abrir projeto</button>
+          </a>
         </div>
-    </section>
-
-    <section id="contact-me" class="general-section">
-        <div class="section-title">
-            <h2 class="background-text">CONTATO</h2>
-
-            <h3 class="subtitle-text">Ent<span>re em con</span>tato</h3>
+        <div class="about-project">
+          <p id="about-project-content">dev-finance$: este foi um projeto construído durante a maratona do
+            Discover. Ele tem como função principal receber e armazenar internamente no browser quantias de
+            entradas e saídas de dinheiro e calcular para devolver o balanço de forma reativa.</p>
         </div>
-        <div class="contact-me-container">
-            
-            <div class="contact-social-media">
-                <a href="mailto:theoonejm@gmail.com" target="_blank">
-                    <img src="assets/mail-icon.svg" alt="Ícone de E-mail">
-                    <p>Me manda um E-mail!</p>
-                </a>
-            </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="contact-social-media">
-                <a href="https://wa.me/5585997404228" target="_blank">
-                    <img src="assets/whatsapp-icon-yellow.svg" alt="Ícone do WhatsApp">
-                    <p>Me manda um WhatsApp!</p>
-                </a>
-            </div>
+  <section id="contact-me" class="general-section">
+    <div class="section-title">
+      <h2 class="background-text">CONTATO</h2>
 
-            <div class="contact-social-media">
-                <a href="tel:85997404228">
-                    <img src="assets/telephone-icon.svg" alt="Ícone do Telefone">
-                    <p>Me liga!</p>
-                </a>
-            </div>
+      <h3 class="subtitle-text">Ent<span>re em con</span>tato</h3>
+    </div>
+    <div class="contact-me-container">
 
-            <div class="contact-social-media">
-                <a href="https://www.linkedin.com/in/theo-nejm" target="_blank">
-                    <img src="assets/linkedin-icon-yellow.svg" alt="Ícone do Linkedin">
-                    <p>Me chama no inbox!</p>
-                </a>
-            </div>
+      <div class="contact-social-media">
+        <a href="mailto:theoonejm@gmail.com" target="_blank">
+          <img src="assets/mail-icon.svg" alt="Ícone de E-mail">
+          <p>Me manda um E-mail!</p>
+        </a>
+      </div>
 
-        </div>
-    </section>
-    <script src="script.js"></script>
+      <div class="contact-social-media">
+        <a href="https://wa.me/5585997404228" target="_blank">
+          <img src="assets/whatsapp-icon-yellow.svg" alt="Ícone do WhatsApp">
+          <p>Me manda um WhatsApp!</p>
+        </a>
+      </div>
+
+      <div class="contact-social-media">
+        <a href="tel:85997404228">
+          <img src="assets/telephone-icon.svg" alt="Ícone do Telefone">
+          <p>Me liga!</p>
+        </a>
+      </div>
+
+      <div class="contact-social-media">
+        <a href="https://www.linkedin.com/in/theo-nejm" target="_blank">
+          <img src="assets/linkedin-icon-yellow.svg" alt="Ícone do Linkedin">
+          <p>Me chama no inbox!</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
