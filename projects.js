@@ -25,6 +25,6 @@ export const todoList = new Project("todo-list",
 )
 
 export const pixelizeMe = new Project("pixelize.me",
-  "todo-list: este foi um projeto desenvolvido por mim para permitir pessoas a fazerem pixel arts (desenhos feitos apenas com pixels) de maneira simples e gratuita. Ele usa somente HTML, CSS e Javascript puro.",
+  "pixelize.me: este foi um projeto desenvolvido por mim para permitir pessoas a fazerem pixel arts (desenhos feitos apenas com pixels) de maneira simples e gratuita. Ele usa somente HTML, CSS e Javascript puro.",
   'pixelize-me'
 )
