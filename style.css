@@ -330,15 +330,29 @@ html {
   justify-content: space-around;
 }
 
-.technologies-icons img {
+.technologies-icons img,
+.technologies-icons svg {
   height: 6.5vw;
   padding: 0;
   transform: translateY(0rem);
   transition-duration: .75s;
 }
 
+.technologies-icons #ts-icon svg {
+  height: 4.75rem;
+  width: 4.75rem;
+  margin-top: .4rem;
+  margin-bottom: .25rem;
+}
 
-.technologies-icons img:hover {
+#react-icon svg {
+  margin-top: -.25rem;
+  height: 6rem;
+  width: 6rem;
+}
+
+.technologies-icons img:hover,
+.technologies-icons svg:hover {
   transform: translatey(-1vw);
 }
 
