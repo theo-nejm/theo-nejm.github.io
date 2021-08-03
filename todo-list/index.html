@@ -1,83 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
+<html lang="pt">
+  <head>
     <meta charset="UTF-8">
-    <title>Projeto férias</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-list</title>
 
-    <!-- FONTS ============================================ -->
+    <!-- IMPORTAR O CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS ============================================ -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Projeto <span>férias</span></h1>
-
-        <div class="header-buttons">
-            <button class="add-task" onclick="openAddTaskModal()">
-                <span>+</span> Adicionar tarefa
-            </button>
-        </div>
+      <h1>To do list</h1>
+      <button class="add-task"><span>+</span> Adicionar tarefa</button>
     </header>
-
     <main>
-        <div class="home-subtitle">
-            <h2>
-                Lista de tarefas
-            </h2>
-        </div>
-        <div class="tasks-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Nome da tarefa</th>
-                        <th>Status</th>
-                        <th>Concluída</th>
-                        <th>Remover</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
-        </div>
-
+      <div class="container">
+        <h2>
+          Lista de tarefas
+        </h2>
+        <table class="tasks-list">
+          <tr>
+              <td>Nome da tarefa</td>
+              <td>Status</td>
+              <td>Concluída</td>
+              <td>Remover</td>
+          </tr>
+        </table>
+      </div>
     </main>
-
     <footer>
-        <p>© Todos os direitos reservados ~ Theo Nejm | 2021</p>
+      <p>© Todos os direitos reservados ~ Theo Nejm | 2021</p>
     </footer>
-
-    <div class="modal-wrapper">
+    <div class="modal-wrapper hidden">
+      <form id="add-task">
         <div class="modal">
-            <div class="modal-header">
-                <h3 class="modal-title">Título da modal</h3>
-                <p class="modal-subtitle">Descrição da modal</p>
-            </div>
-            <div class="modal-body">
-
-            </div>
-            <div class="modal-buttons">
-                <button class="button close-modal" onclick="closeAddTaskModal()">
-                    Cancelar
-                </button>
-
-                <button class="button save" onclick="saveNewTask()">
-                    Salvar
-                </button>
-            </div>
+          <div class="modal-header">
+            <h3>Adicionar tarefa</h3>
+            <p>Coloque o nome da tarefa para criar uma nova tarefa</p>
+          </div>
+          <input type="text" id="input-task">
+          <div class="actions">
+            <button type="button" id="cancel-button">
+              <span>x</span> Cancelar
+            </button>
+            <button type="submit" id="submit-button">
+              <span>+</span> Adicionar
+            </button>
+          </form>
         </div>
+      </div>
     </div>
-
-    <script src="./script.js"></script>
-</body>
-
+    <script src="./scripts/functions.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

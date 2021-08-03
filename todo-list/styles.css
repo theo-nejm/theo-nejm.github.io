@@ -1,0 +1,260 @@
+/* 
+pixel -> unidade fixa
+
+unidades relativas à fonte:
+- rem: relativo à fonte da página
+- em: relativo à fonte do elemento-pai
+
+unidades relativas ao tamanho da página:
+- vh: view heihgt -> altura total da página (100vh ocupa toda a altura)
+- vw: view width -> largura total da página (100vw ocupa toda a largura)
+
+% -> undade relativa ao tamanho do elemento-pai
+
+1rem -> 16px
+*/
+
+/*
+  margin: determina o espaço externo do conteúdo.
+  padding: determina o espaço interno (preenchimento) do conteúdo.
+  box-sizing: determina o tipo de estilização das caixas (o border-box faz com que a unidade que for colocada como altura e largura não sejam
+      sobrepostas às unidades totais de altura e largura definidas.
+  background: é uma shorthand (caminho mais curto) para determinar todas as propriedades de background (comumente usado para deteaminar a cor).
+  font-family: é responsável por determinar a familia da fonte - sans-serif, serif, ou, no caso do programa, Poppins e Open Sans.
+  color: responsável por determinar a cor da fonte.
+  height: determina a altura de um elemento.
+  width: determina a largura de um elemento.
+  display: no caso a gente só usou o flex (que desbloqueia diversas propriedades como align-items, gap e justify-content).
+  align-items: responsável por fazer o alinhamento vertical dos filhos de uma caixa dentro dela.
+  justify-content: responsável por fazer o alinhamento horizontal dos filhos de uma caixa dentro dela.
+  border: podendo ser colocada individualmente (top, bottom, left e right), é responsável por estilizar a borda dos elementos.
+  font-size: determina o tamanho da fonte do elemento e dos filhos dele.
+  filter: tem algumas propriedades (como a brightness, usada no programa) que fazem algumas mudanças na estilização.
+  gap: espaçamento entre os elementos dentro de um outro elemento que tenha o display setado como 'flex'.
+*/
+
+/* RESET => tirar a margin, padding e colcoar todos os elementos com o box-sizing: border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(99, 0, 0);
+}
+
+/* HEADER ------------------------------- */
+
+header {
+  height: 4rem;
+  width: 100vw;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*.modal .modal-header * JOGA CADA COISA PRA UM LADO DA TELA */
+  padding: 0 3rem;
+  border-bottom: 1px solid rgb(99, 0, 0);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .25);
+  position: fixed;
+}
+
+header .add-task {
+  background: none;
+  border: 0;
+  font-size: 1rem;
+  color: rgb(71, 71, 252);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .add-task:hover {
+  filter: brightness(1.5);
+}
+
+header .add-task span {
+  font-size: 1.5rem;
+  margin-right: .25rem;
+}
+
+/* MAIN --------------------------------------- */
+
+main {
+  padding-top: 4rem;
+}
+
+.container {
+  height: 80vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.container .tasks-list {
+  height: 75vh;
+  display: flex;
+  overflow: auto;
+}
+
+/* :nth-child(1) pegar o elemento de acordo com a posição dele dentro do elemento pai */
+.container table tr:nth-child(1) td {
+  font-weight: bold;
+  margin-bottom: .75rem !important;
+}
+
+.container table tr td {
+  margin-bottom: 1rem;
+}
+
+.container table tr td:nth-child(1) { width: 16.5rem; }
+.container table tr td:nth-child(2) { width: 10rem; }
+.container table tr td:nth-child(3) { width: 7rem; }
+.container table tr td:nth-child(4) { width: 7rem; }
+
+.container table tr {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container table tr td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container table tr td svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+span.pendent,
+span.done {
+  padding: .4rem .75rem;
+  border-radius: .25rem;
+  font-size: .9rem;
+}
+
+span.pendent {
+  color: red;
+  border: 1px solid red;
+}
+
+span.done {
+  color: green;
+  border: 1px solid green;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2.75rem;
+  font-size: .925rem;
+  color: #2e2e2e;
+}
+
+/*
+  MODAL --------------------
+
+  'pop-up' que aparece na tela, geralmente para captar alguma informação do user
+*/
+
+.modal-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-wrapper.hidden {
+  display: none;
+}
+
+.modal {
+  height: 14rem;
+  width: 20rem;
+  background: #FAFAFA;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-radius: .25rem;
+}
+
+.modal .modal-header {
+  text-align: center;
+}
+
+.modal .modal-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: .25rem;
+}
+
+.modal .modal-header p {
+  font-size: .9rem;
+  color: rgb(119, 20, 20);
+  width: 90%;
+  margin-left: 5%;
+}
+
+.modal input {
+  height: 2rem;
+  width: 90%;
+  outline: none;
+  border: 2px solid lightgray;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+}
+
+.modal input:focus {
+  border: 2px solid  rgb(71, 71, 252);
+}
+
+.modal .actions {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .actions button {
+  height: 2rem;
+  width: 7rem;
+  background: none;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+#cancel-button {
+  color: red;
+  border: 1px solid red;
+}
+
+#submit-button {
+  background: rgb(71, 71, 252);
+  color: white;
+}
