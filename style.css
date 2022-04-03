@@ -64,32 +64,6 @@ html {
   color: #daa520 !important;
 }
 
-#scroll-to-top-box {
-  position: absolute;
-  height: 5vw;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  display: flex;
-  margin: .5vw;
-}
-
-#scroll-to-top-button {
-  position: fixed;
-  height: 5vw;
-  display: flex;
-  padding: .3vw;
-  margin-left: 94.8vw;
-  z-index: -1;
-  cursor: pointer;
-  background: rgb(228, 228, 255);
-  border-radius: 50%;
-}
-
-.shownScrollTopButton {
-  z-index: 999 !important;
-}
-
 /* SIDE MENU ========================== */
 
 .side-menu {
